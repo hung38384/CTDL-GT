@@ -1,0 +1,25 @@
+? Your task is to write operations of stack data structure in pseudo-codes using an array, then evaluate the complexities of the operations.
+
+stack[SIZE]
+top = -1;
+
+Function isEmpty():
+    return (top == -1)
+
+Function push(element):
+    If (top == SIZE - 1)
+        return "Stack is full. Cannot push."
+    Else 
+        top = top + 1
+        element = stack[top]
+
+Function pop():
+    If (isEmpty())
+        return "Stack is empty. Cannot pop."
+    Else 
+        element = stack[top]
+        top = top - 1
+        return element
+
+Function size():
+    return (top + 1)

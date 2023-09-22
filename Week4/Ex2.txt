@@ -1,0 +1,26 @@
+? Given an integer number n, your task is to write two different algorithms in pseudo-codes to calculate 2n, and evaluate the complexity of the algorithms.
+
+
+- First algorithms:
+    *Function calculate2ToTheN(n):
+        result = 1
+        For i from 1 to n do:
+            result = result * 2
+        End For
+        Return result
+*Complexity : O(n)
+
+--------------------------------------------------------
+
+- Second algorithms:
+    *Function calculate2ToTheN(n):
+        If n is 0 then:
+            Return 1
+        Else if n is even then:
+            temp = calculate2ToTheN(n/2)
+            Return temp * temp
+        Else:
+            temp = calculate2ToTheN((n-1)/2)
+            Return 2 * temp * temp
+        End If
+*Complexity: O(logn)

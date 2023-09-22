@@ -1,0 +1,38 @@
+? Your task is to write operations of stack data structure in pseudo-codes using a linked list, then evaluate the complexities of the operations.
+
+Struct:
+    data
+    next
+
+top = nullprt
+
+Function isEmpty():
+    return (top == nullprt)
+
+Function push(element):
+    newNode = Create a new Node with 'element'
+    If (isEmpty()):
+        top = newNode
+    Else:
+        newNode.next = top
+        top = newNode
+
+Function pop():
+    If (isEmpty()) 
+        print "Stack is empty. Cannot pop."
+        return null
+    Else 
+        element = top.data
+        top = top.next
+        Return element
+
+Function size():
+    count = 0
+    currentNode = top
+    While(currentNode != null):
+        count = count + 1
+        currentNode = currentNode.next
+    return count;
+        
+
+

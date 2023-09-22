@@ -1,0 +1,27 @@
+? Your task is to write operations of queue data structure in pseudo-codes using an array, then evaluate the complexities of the operations.
+
+
+queue[SIZE]
+front = 0
+behind = -1
+
+Function isEmpty():
+    return (behind < front)
+
+Function enqueue(element):
+    If (behind = SIZE - 1)
+        print "Queue is full. Cannot enqueue."
+    Else 
+        behind = behind + 1
+        queue[behind] = element
+
+Function dequeue():
+    If (isEmpty())
+        print "Queue is empty. Cannot dequeue."
+    Else
+        element = queue[front]
+        front = front + 1;
+    return element
+
+Function size():
+    return (behind - front + 1)

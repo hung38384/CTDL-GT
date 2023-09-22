@@ -1,0 +1,37 @@
+? Your task is to write operations of queue data structure in pseudo-codes using a linked list, then evaluate the complexities of the operations.
+
+Struct:
+    data
+    next
+
+front = nullprt
+behind = nullprt
+
+Function isEmpty():
+    return (front == nullprt)
+
+Function enqueue(element):
+    newNode = Create a new Node with 'element'
+    If (isEmpty()):
+        front = newNode
+        behind = newNode
+    Else:
+        behind.next = newNode
+        behind = newNode
+
+Function dequeue():
+    If (isEmpty()):
+        Print "Queue is empty. Cannot dequeue."
+        Return null
+    Else:
+        element = front.data
+        front = front.next
+        Return element
+
+Function size():
+    currentNode = front
+    count = 0
+    While (currentNode != null):
+        count = count + 1
+        currentNode = currentNode.next
+    Return count

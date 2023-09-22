@@ -1,0 +1,10 @@
+Sort the following functions in the ascending order of Big O notation:
+1. 3n+100logn
+2.4n
+3.nlogn
+4.4nlogn + 2n
+5.nˆ2 + 10n
+6.nˆ3
+7.2ˆ10
+8.2ˆ(logn)
+9.2ˆn
