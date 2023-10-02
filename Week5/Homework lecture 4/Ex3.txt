@@ -1,0 +1,27 @@
+- Draw the heap tree:
+        2
+      /   \
+     1     10
+    / \   /  \
+   6   3 8    7
+  / \
+13   20
+
+- Draw the heap tree after inserting values: 14, 0, 35
+         0
+      /     \
+     1       2
+    /  \     / \
+   6    3   8   7
+  / \   / \
+13  20 14 35
+
+- Draw the heap tree after deleting: 6, 13, 35
+        0
+      /   \
+     1     2
+    / \   / \
+   7   3 8   14
+  / 
+20
+

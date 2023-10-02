@@ -1,0 +1,39 @@
+- Draw the heap (tree) from S2:
+        20
+      /    \
+    19      14
+   /  \    /  \
+  9   11  10   7
+ / \     /
+5   4   6
+
+- Insert elements from S1 to this heap one by one and draw the heap after each step.
+        20
+      /    \
+    19      17
+   /  \    /  \
+  14   11  10   8
+ / \   \    \
+12   9   3   16
+|   |   |   
+6   4   7
+|   
+5
+|   
+2
+|  
+1
+|
+0
+
+- Write out the procedure to find and remove the maximum element from binary search tree in detail.
+Bắt đầu từ thư mục gốc của BST.
+Duyệt BST bằng cách di chuyển đến nút con bên phải của mỗi nút cho đến khi bạn đến nút có nút con bên phải là null. Nút này sẽ là phần tử tối đa trong BST. Trong quá trình thực hiện, hãy theo dõi nút gốc của nút phần tử tối đa.
+Khi bạn đã tìm thấy nút phần tử tối đa, hãy xác định xem nó có nút con nào không:
+Một. Nếu nút phần tử tối đa không có nút con (tức là nút lá), chỉ cần xóa nó bằng cách cập nhật con trỏ con bên phải của cha mẹ thành null (vì đây là nút ngoài cùng bên phải nên không có nút con bên trái nào để xem xét).
+b. Nếu nút phần tử tối đa có nút con bên trái (tức là nút bên trong chỉ có nút con bên trái), hãy cập nhật con trỏ con bên phải của cha mẹ nó để trỏ tới nút con bên trái. Bước này đảm bảo rằng phần tử tối đa được loại bỏ trong khi vẫn duy trì cấu trúc BST.
+c. Nếu nút phần tử tối đa có nút con bên phải (tức là nút bên trong chỉ có nút con bên phải), hãy cập nhật con trỏ con bên phải của nút cha để trỏ đến nút con bên phải. Bước này tương tự như bước 3b.
+d. Nếu nút phần tử tối đa có cả con trái và con phải, bạn có hai lựa chọn:
+Tôi. Tìm phần tử lớn nhất trong cây con bên trái của nút phần tử tối đa (phần tử lớn nhất trong cây con bên trái). Thay thế phần tử lớn nhất bằng giá trị này và sau đó xóa đệ quy phần tử lớn nhất khỏi cây con bên trái.
+ii. Tìm phần tử nhỏ nhất trong cây con bên phải của nút phần tử lớn nhất (phần tử nhỏ nhất trong cây con bên phải). Thay thế phần tử tối đa bằng giá trị này và sau đó xóa đệ quy phần tử tối thiểu khỏi cây con bên phải.
+Sau khi loại bỏ phần tử cực đại, cấu trúc của BST vẫn được giữ nguyên với đặc tính sắp xếp như cũ.
