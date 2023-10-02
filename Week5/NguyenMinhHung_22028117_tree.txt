@@ -1,0 +1,26 @@
+insert(int father, int data):
+Độ phức tạp trong trường hợp tốt nhất: O(1) - Nếu cây là rỗng (root là nullptr) và bạn chèn vào gốc (father == -1).
+Độ phức tạp trong trường hợp xấu nhất: O(n) - Nếu bạn cố gắng chèn một nút và phải duyệt qua tất cả các nút trong cây để tìm nút cha cần chèn.
+remove(int data):
+Độ phức tạp trong trường hợp tốt nhất: O(1) - Nếu cây chỉ có một nút (gốc) và bạn xoá nút đó.
+Độ phức tạp trong trường hợp xấu nhất: O(n) - Nếu bạn xoá một nút lá và phải duyệt qua tất cả các nút để tìm nút cần xoá.
+preorder(), postorder():
+Độ phức tạp của cả hai hàm là O(n), vì chúng phải duyệt qua tất cả các nút của cây một lần.
+isBinaryTree():
+Độ phức tạp trong trường hợp tốt nhất và xấu nhất cũng là O(n), vì phải kiểm tra tất cả các nút trong cây để xác định xem nó có tuân theo thuộc tính của cây nhị phân hay không.
+isBinarySearchTree():
+Độ phức tạp: O(n) - Cần duyệt qua tất cả các nút để kiểm tra xem cây có tuân theo thuộc tính của cây tìm kiếm nhị phân hay không. Tuy nhiên, mã hiện tại chưa hoàn thành và luôn trả về false.
+isMaxHeapTree():
+Độ phức tạp: O(n) - Tương tự, cần duyệt qua tất cả các nút để kiểm tra xem cây có tuân theo thuộc tính của cây max-heap hay không. Nhưng mã hiện tại cũng chưa hoàn thành và luôn trả về false.
+height():
+Độ phức tạp trong trường hợp tốt nhất và xấu nhất là O(n) - Bởi vì hàm cần duyệt qua tất cả các nút để tính chiều cao của cây.
+depth(int data):
+Độ phức tạp trong trường hợp tốt nhất: O(1) - Nếu bạn tìm đúng nút ở gốc.
+Độ phức tạp trong trường hợp xấu nhất: O(n) - Nếu bạn cố gắng tìm một nút ở độ sâu tối đa trong cây và phải duyệt qua tất cả các nút.
+numOfLeaves():
+Độ phức tạp trong trường hợp tốt nhất và xấu nhất cũng là O(n), vì cần duyệt qua tất cả các nút để đếm lá.
+findMax():
+Độ phức tạp trong trường hợp tốt nhất và xấu nhất là O(n), vì phải duyệt qua tất cả các nút để tìm giá trị lớn nhất.
+findMaxChild():
+Độ phức tạp trong trường hợp tốt nhất và xấu nhất cũng là O(n), vì cần duyệt qua tất cả các nút để tìm nút có nhiều con nhất.
+Lưu ý rằng trong trường hợp tốt nhất, độ phức tạp có thể là O(1) đối với một số phương thức khi áp dụng cho các tình huống cụ thể. Tuy nhiên, trong trường hợp xấu nhất, tất cả các phương thức đều có độ phức tạp O(n) khi phải duyệt qua tất cả các nút trong cây.

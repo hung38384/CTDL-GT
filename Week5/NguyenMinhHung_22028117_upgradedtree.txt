@@ -1,0 +1,23 @@
+insert(int father, int data):
+Độ phức tạp trong trường hợp tốt nhất: O(1) - Khi cây ban đầu trống và bạn chèn vào gốc (father == -1).
+Độ phức tạp trong trường hợp xấu nhất: O(n) - Khi bạn cố gắng chèn một nút và phải duyệt qua tất cả các nút trong cây để tìm nút cha cần chèn.
+remove(int data):
+Độ phức tạp trong trường hợp tốt nhất: O(1) - Khi bạn xoá nút gốc và cây trở thành rỗng.
+Độ phức tạp trong trường hợp xấu nhất: O(n) - Khi bạn xoá một nút lá và phải duyệt qua tất cả các nút để tìm nút cần xoá.
+preorder(), postorder():
+Độ phức tạp của cả hai hàm vẫn là O(n), vì cần duyệt qua tất cả các nút của cây một lần.
+isBinaryTree():
+Độ phức tạp trong trường hợp tốt nhất và xấu nhất vẫn là O(n), vì phải kiểm tra tất cả các nút trong cây để xác định xem nó có tuân theo thuộc tính của cây nhị phân hay không.
+isBinarySearchTree():
+Độ phức tạp: O(n) - Cần duyệt qua tất cả các nút để kiểm tra xem cây có tuân theo thuộc tính của cây tìm kiếm nhị phân hay không.
+isMaxHeapTree():
+Độ phức tạp: O(n) - Tương tự, cần duyệt qua tất cả các nút để kiểm tra xem cây có tuân theo thuộc tính của cây max-heap hay không.
+height():
+Độ phức tạp trong trường hợp tốt nhất và xấu nhất vẫn là O(n), bởi vì hàm cần duyệt qua tất cả các nút để tính chiều cao của cây.
+depth(int data):
+Độ phức tạp trong trường hợp tốt nhất: O(1) - Nếu bạn tìm đúng nút ở gốc.
+Độ phức tạp trong trường hợp xấu nhất: O(n) - Nếu bạn cố gắng tìm một nút ở độ sâu tối đa trong cây và phải duyệt qua tất cả các nút.
+numOfLeaves():
+Độ phức tạp trong trường hợp tốt nhất và xấu nhất vẫn là O(n), vì cần duyệt qua tất cả các nút để đếm lá.
+findMax():
+Độ phức tạp trong trường hợp tốt nhất và xấu nhất vẫn là O(n), vì phải duyệt qua tất cả các nút để tìm giá trị lớn nhất.
